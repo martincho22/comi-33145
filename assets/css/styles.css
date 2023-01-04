@@ -27,7 +27,7 @@ body{
 
 #cabecera{
     grid-area: header;
-    height: 35vh;
+    height: 23vh;
     width: 100vw;
 }
 
@@ -196,10 +196,11 @@ li a,a:link, a:visited, a:active{
     grid-area: opciones;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 18px;
     text-align: center;
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 0.8rem;
     padding: 10px;
     
 }
@@ -211,7 +212,7 @@ li a,a:link, a:visited, a:active{
 
 
 footer{
-    height: 75vh;
+    height: 55vh;
     background-color: rgb(71, 59, 59);
     grid-area: footer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -231,6 +232,7 @@ footer{
     border-bottom: 1px solid red;
     color: rgb(156, 95, 3);
 
+
 }
 
 .contacto{
@@ -238,23 +240,24 @@ footer{
     width: 300px;
     text-align: center;
     padding: 5px;
+    color: rgba(255, 0, 0, 0.842)
     
 }
 
 .ubicacion{
     height: 150px;
     width: 300px;
- 
     text-align: center;
+    color: rgba(255, 0, 0, 0.842)
 
 }
 
 .seguinos{
     height: 80px;
     width: 300px;
-
     text-align: center;
     padding: 5px;
+    color: rgba(255, 0, 0, 0.842)
 }
 
 
