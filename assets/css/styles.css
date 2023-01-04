@@ -7,7 +7,7 @@
 }
 
 body{
-    height: 300vh;
+    height: 360vh;
     background-image: linear-gradient(to left, gray ,rgb(49, 47, 47));
     overflow-x: hidden;
     display: grid;
@@ -99,7 +99,7 @@ li a,a:link, a:visited, a:active{
 /* MAIN*/
 
 #container{
-    height:390vh;
+    height:370vh;
     width: 100vw;
     grid-area: main;
     display: grid;
@@ -191,14 +191,31 @@ li a,a:link, a:visited, a:active{
 }
 
 .section__c{
-    height: 30vh;
+    height: 80vh;
+    width: 80%;
     grid-area: opciones;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
+.servicios{
+    color: rgb(190, 177, 177);
+    ;
+}
+
+
+
+
 footer{
-    height: 100vh;
+    height: 90vh;
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
