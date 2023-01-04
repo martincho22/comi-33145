@@ -244,13 +244,16 @@ footer{
     
 }
 
+
+
 .ubicacion{
     height: 150px;
     width: 300px;
     text-align: center;
     color: rgba(255, 0, 0, 0.842)
-
 }
+
+
 
 .seguinos{
     height: 80px;
@@ -275,75 +278,104 @@ footer{
 }
 
 @media  (min-width:1024px){
-  
 
-}
+    body{
+        height: 200vh;
+        width: 100vw;
+    }
 
+    .toggle-menu{display: none;}
 
+    #cabecera{
+        height: 30vh;
+        text-align: center;
+    }
 
-@media  (max-width:768px){
-    #menu__b{display:none;}
-
-}
-
-
-/*--------------desktop------------------*/
-
-@media  (min-width:768px){
-    
     .cabecera__logo{
-        height: 25vh;
+        height: 20vh;
+     
     }
 
     .cabecera__nav{
-        height: 15vh;
-        width: 90vw;
+        height: 4vh;
         display: flex;
         margin: auto;
         margin-top: 95px;
         justify-content: space-around;
     }
-
-    #container{height: 215vh;}
-
     .menu__ab{
         flex-direction: row; 
     }
 
-    #menu__a{width: 49%;
-    justify-content: start;}
-
-    #menu__b{width: 30%;
-    justify-content: end;
-    }
-
-    #menu__b .menu__item{
-        height: 55px;
-        width: 55px;
-    }
-
-    .toggle-menu{display: none;}
-    
-
-    .section_img{
-  
-        height: 70vh;
-        width: 300px;
+    #container{
+        height: 130vh;
+        width: 100vw;
     }
 
     .section__a{
-        height: 60vh;
-        display: flex;
+        height: 70vh;
+        width: 80%;
         flex-direction: row;
         justify-content:center ;
+        align-items:center;
         gap: 5px;
+        margin: auto;
     }
+  
 
     .section__b{
-        height: 150px;
-        padding-top: 25px;
-       }
+        height: 11vh;
+        width: 80%;
+        margin: auto;
+    }
 
+
+    .section__c{
+        height: 47vh;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer{
+        height: 35vh;
+      
+    }
+
+    .pie__container {
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .pie__container h3{
+        padding-bottom: 5px;
+    }
+
+    .pie__bx{
+        padding-top: 5px;
+    }
+
+    .map{
+        padding-top: 5px
+    }
+
+}
+
+
+@media  (max-width:768px){
+  
+
+} 
+
+/*--------------desktop------------------*/
+
+@media  (min-width:768px){
+  
+    
 }
 
 
@@ -362,6 +394,6 @@ footer{
 
 
 @media  (min-width:320px){
-    
+   
 }
 
