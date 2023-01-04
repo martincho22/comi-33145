@@ -26,7 +26,8 @@ body{
 
 
 /*HEADER*/
-header{
+
+#cabecera{
     grid-area: header;
     height: 35vh;
     width: 100vw;
@@ -144,7 +145,6 @@ li a,a:link, a:visited, a:active{
 }
 
 
-
 #uno{ background-image: url("/assets/img/walla.jpg");
     background-position: center;
 	background-attachment: contain;
@@ -194,6 +194,9 @@ li a,a:link, a:visited, a:active{
     transform: translateY(10px);
     transition: 0.8s;
 }
+
+
+
 /* efecto para desktop*/
 /*
 .section_img:hover{
@@ -201,13 +204,6 @@ li a,a:link, a:visited, a:active{
     transition: 0.8s;
 }
  */
-
-
-
-
-
-
-
 
 .section__b{
     height: 50vh;
@@ -253,17 +249,32 @@ footer{
 @media  (min-width:768px){
 
     .cabecera__nav{
+        height: 7vh;
         width: 80vw;
         display: flex;
         margin: auto;
+        margin-top: 95px;
+        justify-content: space-around;
     }
+
+    .cabecera__logo{
+        height: 23vh;
+    }
+
+    
+
 
     .menu__ab{
         flex-direction: row; 
     }
 
-    #menu__b{width: 50%;
-    justify-content: end;}
+    #menu__a{width: 49%;
+    justify-content: start;}
+
+    #menu__b{width: 30%;
+    justify-content: end;
+    padding: 5px;
+    }
 
     .toggle-menu{display: none;}
    
