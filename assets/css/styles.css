@@ -183,13 +183,17 @@ li a,a:link, a:visited, a:active{
 }
 
 .section__b{
-    height: 50vh;
+    height: 12vh;
     grid-area: marcas;
+    background-color: rgba(254, 254, 254, 0.178);
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 .section__c{
-    height: 40vh;
+    height: 30vh;
     grid-area: opciones;
+   
 }
 
 footer{
@@ -225,7 +229,7 @@ footer{
 /*--------------desktop------------------*/
 
 @media  (min-width:768px){
-
+    
     .cabecera__nav{
         height: 9vh;
         width: 90vw;
@@ -238,6 +242,9 @@ footer{
     .cabecera__logo{
         height: 23vh;
     }
+
+
+    #container{height: 215vh;}
 
     .menu__ab{
         flex-direction: row; 
@@ -265,17 +272,18 @@ footer{
     }
 
     .section__a{
-        height: 70vh;
+        height: 60vh;
         display: flex;
         flex-direction: row;
-      
         justify-content:center ;
         gap: 5px;
     }
 
-   
-   
-  
+    .section__b{
+        height: 150px;
+        padding-top: 25px;
+       }
+
 }
 
 
