@@ -7,11 +7,12 @@
 }
 
 body{
-    height: 360vh;
+    height: 400vh;
+    width: 100vw;
     background-image: linear-gradient(to left, gray ,rgb(49, 47, 47));
     overflow-x: hidden;
     display: grid;
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 1fr; 
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
     
@@ -28,12 +29,10 @@ body{
     grid-area: header;
     height: 35vh;
     width: 100vw;
-   
-  
-  
 }
 
 .cabecera__logo{
+    height: 15vh;
     padding: 5px;
     text-align: center;
     cursor: pointer;
@@ -45,6 +44,7 @@ body{
 }
 
 .cabecera__nav{
+    height: 10vh;
     width: 100vw;   
 }
 
@@ -99,7 +99,7 @@ li a,a:link, a:visited, a:active{
 /* MAIN*/
 
 #container{
-    height:370vh;
+    height:330vh;
     width: 100vw;
     grid-area: main;
     display: grid;
@@ -183,7 +183,7 @@ li a,a:link, a:visited, a:active{
 }
 
 .section__b{
-    height: 12vh;
+    height: 14vh;
     grid-area: marcas;
     background-color: rgba(254, 254, 254, 0.178);
     border-top: 2px solid red;
@@ -191,32 +191,73 @@ li a,a:link, a:visited, a:active{
 }
 
 .section__c{
-    height: 80vh;
+    height: 60vh;
     width: 80%;
     grid-area: opciones;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    gap: 25px;
     text-align: center;
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    padding: 10px;
+    
 }
 
 .servicios{
-    color: rgb(190, 177, 177);
-    ;
+    color: rgb(221, 207, 207);
+    
 }
-
-
 
 
 footer{
-    height: 90vh;
+    height: 75vh;
+    background-color: rgb(71, 59, 59);
     grid-area: footer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pie__container{
+
+    height: 55vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.pie__container h3{
+    border-bottom: 1px solid red;
+    color: rgb(156, 95, 3);
 
 }
+
+.contacto{
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.ubicacion{
+    height: 150px;
+    width: 300px;
+ 
+    text-align: center;
+
+}
+
+.seguinos{
+    height: 80px;
+    width: 300px;
+
+    text-align: center;
+    padding: 5px;
+}
+
+
 
 
 /*media movil --- pensar en  movile*/
@@ -247,19 +288,18 @@ footer{
 
 @media  (min-width:768px){
     
+    .cabecera__logo{
+        height: 25vh;
+    }
+
     .cabecera__nav{
-        height: 9vh;
+        height: 15vh;
         width: 90vw;
         display: flex;
         margin: auto;
         margin-top: 95px;
         justify-content: space-around;
     }
-
-    .cabecera__logo{
-        height: 23vh;
-    }
-
 
     #container{height: 215vh;}
 
