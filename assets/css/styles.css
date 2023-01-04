@@ -7,10 +7,11 @@
 }
 
 body{
+    height: 300vh;
     background-image: linear-gradient(to left, gray ,rgb(49, 47, 47));
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
     
@@ -21,10 +22,15 @@ body{
     ;
 }
 
+
+
+
+/*HEADER*/
 header{
     grid-area: header;
     height: 35vh;
     width: 100vw;
+   
   
   
 }
@@ -35,15 +41,19 @@ header{
 }
 
 .cabecera__nav{
-    width: 100vw;}
+    width: 100vw;   
+}
 
 
 .toggle-menu{
     position: absolute;
     top: 0.5rem;
-    right: 0.5rem;
+    right: 1rem;
     filter: invert(1);
     z-index: 1;
+  
+   
+
 }
 
 
@@ -57,7 +67,8 @@ header{
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s;
-    transform: translateY(-160%);
+    transform: translateY(-165%);
+   
 
 }
 
@@ -67,7 +78,20 @@ header{
 }
 
 
-.menu__item{ padding: 1em;}
+.menu__item{ 
+    padding: 1em;
+    background-color: rgba(46, 47, 46, 0.789);
+    width: 50%;
+    border-bottom: rgba(255, 0, 0, 0.791) 2px solid;
+    font-family: play;
+    text-align: center;
+    
+}
+
+.menu__item:hover{
+    background-color: chocolate;
+    color: aliceblue;
+}
 
 li a,a:link, a:visited, a:active{
     text-decoration: none;
@@ -75,24 +99,133 @@ li a,a:link, a:visited, a:active{
    }
 
 
+/* MAIN*/
 
 
-
-
-
-main{
+#container{
+    height:390vh;
+    width: 100vw;
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "imagenes"
+    "marcas"
+    "opciones"
+    ;
+
 }
+
+
+.section__a{
+    height: 300vh;
+    grid-area: imagenes;
+    background-color:#113ab448;
+    grid-area:imagenes ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: play;
+    padding-top: 15px;
+  
+
+}
+
+
+
+.section_img{
+    height: 60vh;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.332);   
+    border-radius: 2px;
+    box-shadow: rgba(242, 242, 244, 0.25) 0px 30px 60px -12px, rgba(251, 248, 248, 0.648) 0px 18px 36px -18px;
+}
+
+
+
+#uno{ background-image: url("/assets/img/walla.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+    cursor: pointer;
+
+}
+
+#dos{background-image: url("/assets/img/wallb.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+#tres{
+    background-image: url("/assets/img/wallc.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+#cuatro{background-image: url("/assets/img/walld.jpg");
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;}
+
+.section_img h2{
+        color: antiquewhite;
+        font-size: 2.5rem;
+        line-height: 180px;
+        text-align: center;       
+}
+
+ .section_img h2 a:hover{
+    box-shadow: blue 0px 0px 0px 2px inset, rgba(255, 3, 3, 0.614) 10px -10px 0px -3px, rgba(255, 255, 255, 0) 10px -10px, rgb(82, 77, 77) 20px -20px 0px -3px, rgba(74, 73, 72, 0) 20px -20px, rgba(209, 3, 3, 0.452) 30px -30px 0px -3px, rgba(255, 156, 85, 0) 30px -30px, rgba(0, 80, 252, 0.701) 40px -40px 0px -3px, rgba(255, 85, 85, 0) 40px -40px;
+    border-radius: 15PX;
+
+}
+
+
+.section_img:hover{
+    transform: translateY(10px);
+    transition: 0.8s;
+}
+/* efecto para desktop*/
+/*
+.section_img:hover{
+    transform: translate(20px);
+    transition: 0.8s;
+}
+ */
+
+
+
+
+
+
+
+
+.section__b{
+    height: 50vh;
+    grid-area: marcas;
+}
+
+
+.section__c{
+    height: 40vh;
+    grid-area: opciones;
+}
+
+
+
+
+
+
 
 
 footer{
+    height: 100vh;
     grid-area: footer;
 }
-
-
-
-
-
 
 
 /*media movil --- pensar en first movile*/
@@ -108,6 +241,13 @@ footer{
 
 @media  (min-width:1024px){
   
+}
+
+
+
+@media  (max-width:768px){
+    #menu__b{display:none;}
+
 }
 
 @media  (min-width:768px){
@@ -126,9 +266,10 @@ footer{
     justify-content: end;}
 
     .toggle-menu{display: none;}
-  
+   
   
 }
+
 
 @media  (min-width:600px){
    
@@ -139,7 +280,7 @@ footer{
 }
 
 @media  (max-width:320px){
-    #menu__b{display:none;}
+   
     
 }
 
