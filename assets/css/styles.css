@@ -22,9 +22,6 @@ body{
     ;
 }
 
-
-
-
 /*HEADER*/
 
 #cabecera{
@@ -39,12 +36,17 @@ body{
 .cabecera__logo{
     padding: 5px;
     text-align: center;
+    cursor: pointer;
+}
+
+.cabecera__logo img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.6s all;  
 }
 
 .cabecera__nav{
     width: 100vw;   
 }
-
 
 .toggle-menu{
     position: absolute;
@@ -57,8 +59,6 @@ body{
 
 }
 
-
-
 .menu__ab{
     list-style: none;
     margin-top: 0;
@@ -70,7 +70,6 @@ body{
     transition: transform 0.3s;
     transform: translateY(-165%);
    
-
 }
 
 
@@ -78,15 +77,13 @@ body{
     transform: translateY(0);
 }
 
-
 .menu__item{ 
     padding: 1em;
     background-color: rgba(46, 47, 46, 0.789);
-    width: 50%;
+    width: 100%;
     border-bottom: rgba(255, 0, 0, 0.791) 2px solid;
     font-family: play;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .menu__item:hover{
@@ -99,9 +96,7 @@ li a,a:link, a:visited, a:active{
     color: rgb(252, 248, 247);
    }
 
-
 /* MAIN*/
-
 
 #container{
     height:390vh;
@@ -115,9 +110,7 @@ li a,a:link, a:visited, a:active{
     "marcas"
     "opciones"
     ;
-
 }
-
 
 .section__a{
     height: 255vh;
@@ -130,11 +123,7 @@ li a,a:link, a:visited, a:active{
     gap: 15px;
     font-family: play;
     padding-top: 15px;
-  
-
 }
-
-
 
 .section_img{
     height: 60vh;
@@ -144,13 +133,11 @@ li a,a:link, a:visited, a:active{
     box-shadow: rgba(242, 242, 244, 0.25) 0px 30px 60px -12px, rgba(251, 248, 248, 0.648) 0px 18px 36px -18px;
 }
 
-
 #uno{ background-image: url("/assets/img/walla.jpg");
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;
     cursor: pointer;
-
 }
 
 #dos{background-image: url("/assets/img/wallb.jpg");
@@ -186,36 +173,24 @@ li a,a:link, a:visited, a:active{
       rgba(255, 156, 85, 0) 30px -30px, rgba(0, 80, 252, 0.701) 40px -40px 0px -3px, 
       rgba(255, 85, 85, 0) 40px -40px;
     border-radius: 15PX;
+    transition: all 0.8s;
 
 }
-
 
 .section_img:hover{
     transform: translateY(10px);
     transition: 0.8s;
 }
 
-
-
-/* efecto para desktop*/
-/*
-.section_img:hover{
-    transform: translate(20px);
-    transition: 0.8s;
-}
- */
-
 .section__b{
     height: 50vh;
     grid-area: marcas;
 }
 
-
 .section__c{
     height: 40vh;
     grid-area: opciones;
 }
-
 
 footer{
     height: 100vh;
@@ -223,7 +198,7 @@ footer{
 }
 
 
-/*media movil --- pensar en first movile*/
+/*media movil --- pensar en  movile*/
 
 
 @media (min-width:1400px){
@@ -246,11 +221,14 @@ footer{
 
 }
 
+
+/*--------------desktop------------------*/
+
 @media  (min-width:768px){
 
     .cabecera__nav{
-        height: 7vh;
-        width: 80vw;
+        height: 9vh;
+        width: 90vw;
         display: flex;
         margin: auto;
         margin-top: 95px;
@@ -261,9 +239,6 @@ footer{
         height: 23vh;
     }
 
-    
-
-
     .menu__ab{
         flex-direction: row; 
     }
@@ -273,10 +248,32 @@ footer{
 
     #menu__b{width: 30%;
     justify-content: end;
-    padding: 5px;
+    }
+
+    #menu__b .menu__item{
+        height: 55px;
+        width: 55px;
     }
 
     .toggle-menu{display: none;}
+    
+
+    .section_img{
+  
+        height: 70vh;
+        width: 300px;
+    }
+
+    .section__a{
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+      
+        justify-content:center ;
+        gap: 5px;
+    }
+
+   
    
   
 }
