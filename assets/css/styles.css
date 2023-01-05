@@ -133,27 +133,27 @@ li a,a:link, a:visited, a:active{
     box-shadow: rgba(242, 242, 244, 0.25) 0px 30px 60px -12px, rgba(251, 248, 248, 0.648) 0px 18px 36px -18px;
 }
 
-#uno{ background-image: url("/assets/img/walla.jpg");
+#uno{ background-image: url("../img/walla.jpg");
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;
     cursor: pointer;
 }
 
-#dos{background-image: url("/assets/img/wallb.jpg");
+#dos{background-image: url("../img/wallb.jpg");
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;
 }
 
 #tres{
-    background-image: url("/assets/img/wallc.jpg");
+    background-image: url("../img/wallc.jpg");
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;
 }
 
-#cuatro{background-image: url("/assets/img/walld.jpg");
+#cuatro{background-image: url("../img/walld.jpg");
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;}
