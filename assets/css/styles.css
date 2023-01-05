@@ -206,10 +206,10 @@ li a,a:link, a:visited, a:active{
 }
 
 .servicios{
-    color: rgb(221, 207, 207);
-    
+    color: rgb(221, 207, 207);   
 }
 
+/*FOOTER*/
 
 footer{
     height: 55vh;
@@ -219,7 +219,6 @@ footer{
 }
 
 .pie__container{
-
     height: 55vh;
     display: flex;
     flex-direction: column;
@@ -231,7 +230,6 @@ footer{
 .pie__container h3{
     border-bottom: 1px solid red;
     color: rgb(156, 95, 3);
-
 
 }
 
@@ -264,6 +262,44 @@ footer{
 }
 
 
+
+
+
+
+
+
+/*FORMULARIO*/
+#container_form{
+    height: 40vh;
+    width: 100vw;
+ 
+    margin-top: 25px ;
+    
+    }
+    .container_caja{  
+       margin: auto;
+       width: 50%;
+       grid-area: form;    
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(248, 245, 245, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+    }
+    
+    #form input ,textarea{
+        width: 100%;
+        font-size: 1.2rem;
+        border: red 1px solid;
+        border-radius: 5px;
+        font-family: play;
+        padding: 10px;
+        background-color: #34363C;
+        color: chocolate;
+    
+}
 
 
 /*media movil --- pensar en  movile*/
@@ -363,7 +399,14 @@ footer{
         padding-top: 5px
     }
 
+
+
+    /*formulario*/
+
+
+    
 }
+
 
 
 @media  (max-width:768px){
