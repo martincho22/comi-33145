@@ -183,7 +183,7 @@ li a,a:link, a:visited, a:active{
 }
 
 .section__b{
-    height: 14vh;
+    height: 20vh;
     grid-area: marcas;
     background-color: rgba(254, 254, 254, 0.178);
     border-top: 2px solid red;
